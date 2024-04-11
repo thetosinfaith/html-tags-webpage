@@ -52,7 +52,7 @@ text-align: left;
 padding: 8px;
 }
 
-tr: nth-child(even){
+tr:  nth-child(even){
   background-color: #f2e5ff;
 }
 </style>
@@ -139,9 +139,16 @@ Your browser does not support the html audio tag.
    <td>7</td>
    <td>&lt;code&gt;</td>
    <td>Displays computer code</td>
-   <td><code>git checkout -b my-feature</code></td>
-   <td><code>git push origin my-feature</code></td>
-   <td><code>Submit a pull request</code></td>
+   <td><pre><code>
+function greet() {
+  console.log("Hello, world!");
+}
+greet();
+</code></pre></td>
+   <td>To install the package, run <code>npm install package-name</code>.</td>
+   <td><code>&lt;h1&gt;Hello, world!&lt;/h1&gt;</code>
+
+</td>
 <tr>
 <tr>
    <td>8</td>
@@ -199,73 +206,119 @@ Your browser does not support the html audio tag.
    <td>13</td>
    <td>&lt;b&gt;</td>
    <td>Makes text look strong</td>
-   <td>Makes text stand out</td>
-   <td>Makes text tiny</td>
-   <td>Makes text appear important</td>
+   <td>Makes<b> text stand out</b></td>
+   <td>Makes<b> text bold</b></td>
+   <td>Makes<b> text appear important</b></td>
 <tr>
 <tr>
    <td>14</td>
    <td>&lt;i&gt;</td>
    <td>Makes text italic</td>
-   <td>Makes text lean to the side</td>
-   <td>Makes text look different</td>
-   <td>Makes text look fancy</td>
+   <td>Makes <i>text lean to the side</i></td>
+   <td>Makes <i>text look different</i></td>
+   <td>Makes <i>text look fancy</i></td>
 <tr>
 <tr>
    <td>15</td>
    <td>&lt;ins&gt;</td>
-   <td>Marks inserted text</td>
-   <td>Shows what has been added</td>
    <td>Underlines new text</td>
-   <td>Highlights recently added text</td>
+   <td>Shows <ins>what has been added</ins></td>
+   <td>Marks <ins>inserted text</ins></td>
+   <td>Highlights <ins>recently added text</ins></td>
 <tr>
 <tr>
    <td>16</td>
    <td>&lt;u&gt;</td>
-   <td>Makes text underlined</td>
-   <td>Breaks the line to start new</td>
-   <td>Jumps to the next line</td>
-   <td>Creates a space between lines</td>
+   <td>Breaks the line start new</td>
+   <td>Makes text <u>underlined </u></td>
+   <td>Jumps to </u> the</u> <u>next line</u></td>
+   <td>Creates a <u> space</u> <u>between</u> lines</td>
 <tr>
 <tr>
    <td>17</td>
    <td>&lt;br&gt;</td>
    <td>Adds a line break</td>
-   <td>Shrinks the text size</td>
-   <td>Makes text tiny</td>
-   <td>Reduces the text's size</td>
+   <td><p>Roses are red,<br>
+Violets are blue,<br>
+Sugar is sweet,<br>
+And so are you.</p>
+</td>
+   <td><address>
+  <strong>Email:</strong> example@example.com<br>
+  <strong>Phone:</strong> 123-456-7890
+</address>
+</td>
+   <td><p>John Doe<br>
+123 Main Street<br>
+Anytown, USA</p>
+</td>
 <tr>
 <tr>
    <td>18</td>
    <td>&lt;hr&gt;</td>
    <td>Adds a horizontal line</td>
-   <td>Draws a line across the page</td>
-   <td>Separates sections with a line</td>
-   <td>Makes a line to divide things</td>
+   <td><section>
+  <h2>Section 1</h2>
+  <p>This is content in section 1.</p>
+  <hr>
+  <h2>Section 2</h2>
+  <p>This is content in section 2.</p>
+</section>
+</td>
+   <td><p>This is some text above the styled line.</p>
+<hr style="border-top: 2px dashed blue;">
+<p>This is some text below the styled line.</p>
+</td>
+   <td><p>This is some text above the line.</p>
+<hr>
+<p>This is some text below the line.</p>
+</td>
 <tr>
 <tr>
    <td>19</td>
    <td>&lt;address&gt;</td>
    <td>Defines contact information</td>
-   <td><address>Call us at: <a href="+234 8057432187"></td>
-   <td>Shows an address or contact info</td>
-   <td>Lists an email address</td>
+   <td><section>
+  <h2>Legal Information</h2>
+  <address>
+    Copyright &copy; 2024 Example Company.<br>
+    All rights reserved.<br>
+    Terms of Service | Privacy Policy
+  </address>
+</section>
+</td>
+   <td><footer>
+  <address>
+    Written by <a href="mailto:webmaster@example.com">Webmaster</a>.<br>
+    Visit us at: example.com<br>
+    123 Main Street, Anytown, USA
+  </address>
+</footer>
+</td>
+   <td><address>
+  <strong>John Doe</strong><br>
+  123 Main Street<br>
+  Anytown, USA<br>
+  <a href="mailto:john@example.com">john@example.com</a><br>
+  <a href="tel:+1234567890">123-456-7890</a>
+</address>
+</td>
 <tr>
 <tr>
    <td>20</td>
    <td>&lt;sub&gt;</td>
-   <td>Makes text subscript</td>
    <td>Puts a small number below</td>
-   <td>Lowers the text a little</td>
-   <td>Makes text go down a bit</td>
+   <td>E = mc<sub>2</sub></td>
+   <td>CO<sub>2</sub> emissions in 2020</td>
+   <td>H<sub>2</sub>O</td>
 <tr>
 <tr>
    <td>21</td>
    <td>&lt;sup&gt;</td>
    <td>Puts a small number on top</td>
-   <td>Raises the text a little</td>
-   <td>Makes text go up a bit.</td>
-   <td>Makes text superscript</td>
+   <td>x<sup>2</sup> + y<sup>2</sup> = r<sup>2</sup></td>
+   <td>CO<sup>2</sup>.</td>
+   <td>This is an example<sup>[1]</sup></td>
 <tr>
 <tr>
    <td>22</td>
@@ -281,8 +334,11 @@ Your browser does not support the html audio tag.
   <a href="/instagram/">Instagram</a> |
   <a href="/linkedin/">LinkedIn</a> 
 </nav></td>
-   <td>List of buttons to go places</td>
-   <td>Collection of links to explore</td>
+   <td><nav>
+  <a href="/about/">About</a> |
+  <a href="/shop/">Shop</a> |
+  <a href="/work with me/">Work With Me</a> 
+</nav></td>
 <tr>
 <tr>
    <td>23</td>
@@ -296,17 +352,50 @@ Your browser does not support the html audio tag.
    <td>24</td>
    <td>&lt;input&gt;</td>
    <td>Adds a space to write something</td>
-   <td>A circle to choose gender</td>
-   <td>A box to write your name</td>
-   <td>An image of anything</td>
+<td><fieldset>
+  <legend>Choose your gender:</legend>
+  <label for="male">Male</label>
+  <input type="radio" id="male" name="gender" value="male">
+  
+  <label for="female">Female</label>
+  <input type="radio" id="female" name="gender" value="female">
+</fieldset>
+</td>
+   <td><label for="subscribe">Subscribe to our newsletter:</label>
+<input type="checkbox" id="subscribe" name="subscribe" value="yes">
+</td>
+   <td><label for="username">Username:</label>
+<input type="text" id="username" name="username" placeholder="Enter your username">
+</td>
 <tr>
 <tr>
    <td>25</td>
    <td>&lt;select&gt;</td>
    <td>Makes a list to choose from</td>
-   <td>A company's logo picture</td>
-   <td>A profile picture</td>
-   <td>A box to check if you have a car</td>
+   <td><label for="color">Choose your favorite color:</label>
+<select id="color" name="color">
+  <option value="red">Red</option>
+  <option value="blue">Blue</option>
+  <option value="green">Green</option>
+  <option value="yellow">Yellow</option>
+</select>
+</td>
+   <td><label for="country">Choose a country:</label>
+<select id="country" name="country">
+  <option value="usa">USA</option>
+  <option value="canada">Canada</option>
+  <option value="uk">UK</option>
+  <option value="australia">Australia</option>
+</select>
+</td>
+   <td><label for="language">Choose a language:</label>
+<select id="language" name="language">
+  <option value="html">HTML</option>
+  <option value="css">CSS</option>
+  <option value="javascript">JavaScript</option>
+  <option value="python">Python</option>
+</select>
+</td>
 <tr>
 <tr>
    <td>26</td>
@@ -320,120 +409,340 @@ Your browser does not support the html audio tag.
    <td>27</td>
    <td>&lt;samp&gt;</td>
    <td>Shows how something will look</td>
-   <td>Specifies sample output</td>
-   <td>Displays examples of output</td>
-   <td>Gives an idea of what to expect</td>
+   <td><p>Sample output of a command-line operation:</p>
+<pre><samp>
+$ git clone https://github.com/username/repository.git
+Cloning into 'repository'...
+remote: Enumerating objects: 147, done.
+remote: Counting objects: 100% (147/147), done.
+remote: Compressing objects: 100% (89/89), done.
+Receiving objects: 100% (147/147), 37.15 KiB | 4.64 MiB/s, done.
+Resolving deltas: 100% (51/51), done.
+</samp></pre>
+</td>
+   <td><p>Sample output of a Python script:</p>
+<pre><samp>
+Hello, World!
+The result is: 42
+</samp></pre>
+</td>
+   <td><p>The <samp>ls</samp> command in Unix-like operating systems lists files and directories in the current directory.</p>
+</td>
 <tr>
 <tr>
    <td>28</td>
    <td>&lt;abbr&gt;</td>
    <td>Shortens a long word</td>
-   <td>Explains what an abbreviation is</td>
-   <td>Defines an abbreviation</td>
-   <td>Gives short names to things</td>
+   <td>The <abbr title="Portable Document Format">PDF</abbr> is a file format used to present documents in a manner independent of application software, hardware, and operating systems.</td>
+   <td>The <abbr title="World Health Organization">WHO</abbr> is a specialized agency of the United Nations responsible for international public health.</td>
+   <td>The <abbr title="Central Processing Unit">CPU</abbr> is often referred to as the "brain" of the computer.</td>
 <tr>
 <tr>
    <td>29</td>
    <td>&lt;aside&gt;</td>
    <td>Extra information on the side</td>
-   <td>A sidebar with related content</td>
-   <td>Additional details beside main text</td>
-   <td>Content aside from the main content</td>
+   <td><article>
+  <h1>Inside Seye’s Diary by CliqueShoppa:</h1>
+  <p>Hi, My name is Seye, you probably know me as the go-to person who helps everyone take that courageous leap into entrepreneurship. Some people perceive me as this business guru or a super knowledgeable bot. It definitely makes me feel special and brings me joy. 😅
+</p>
+  
+  <aside>
+  <h2>Advertisement</h2>
+  <img src="C:\Users\user\Documents\The Curve\images\advertisement.jpg" alt="Advertisement" width="200" height="150">
+</aside>
+</article>
+</td>
+   <td><article>
+  <h1>Tomi Adeyemi</h1>
+  <p>Tomi Adeyemi is a Nigerian-American writer and creative writing coach. She is best known for her novel Children of Blood and Bone, the first in the Legacy of Orïsha trilogy published by Henry Holt Books ... Wikipedia</p>
+  
+  <aside>
+    <h2>Author Bio</h2>
+    <p>Name: Tomi Adeyemi<br>Email: tomi@example.com</p>
+  </aside>
+</article>
+</td>
+   <td><article>
+  <h1>Seun Osewa's Blog</h1>
+  <p>You've been hired to teach Computer Appreciation at a local Secondary school for one term. During that term, you're expected to give the students 2 tests (15 marks each), one practical project(10 marks) and 1 exam (100 marks to be scaled down to 60 marks).
+</p>
+  
+  <aside>
+    <h2>Related Links</h2>
+    <ul>
+      <li><a href="#">recruitment (1)</a></li>
+      <li><a href="#">education (5)</a></li>
+      <li><a href="#">contest (7)</a></li>
+    </ul>
+  </aside>
+</article>
+</td>
 <tr>
+
 <tr>
    <td>30</td>
-   <td>&lt;article&gt;</td>
-   <td>An individual blog post</td>
-   <td>An article in a magazine</td>
-   <td>Defines an independent piece of content</td>
-   <td>A separate article about a topic</td>
+   <td>&lt;progress&gt;</td>
+   <td>Tracks how much is done</td>
+   <td><progress value="50" max="100"></progress></td>
+   <td><progress value="80" max="100"></progress></td>
+   <td><progress value="25" max="100"></progress></td>
 <tr>
 <tr>
    <td>31</td>
    <td>&lt;blockquote&gt;</td>
    <td>Something someone said</td>
-   <td>A highlighted quote</td>
-   <td>A longer quoted message</td>
-   <td>Indicates a quoted text</td>
+   <td><blockquote>
+  "The only way to do great work is to love what you do." - Steve Jobs
+</blockquote></td>
+   <td><blockquote>
+  "This product exceeded my expectations and I highly recommend it to anyone looking for quality." - Happy Customer
+</blockquote></td>
+   <td><blockquote>
+  "In three words I can sum up everything I've learned about life: it goes on." - Robert Frost
+</blockquote></td>
 <tr>
 <tr>
    <td>32</td>
    <td>&lt;section&gt;</td>
    <td>A separate part of the webpage</td>
-   <td>A section with pictures</td>
-   <td>Defines a section in a document</td>
-   <td>A part of the story</td>
+   <td><article>
+  <h1>My Trip to Paris</h1>
+  
+  <section>
+    <h2>Day 1: Arrival</h2>
+    <p>Details about arriving in Paris and checking into the hotel.</p>
+  </section>
+  
+  <section>
+    <h2>Day 2: Exploring the City</h2>
+    <p>Highlights of visiting famous landmarks and attractions.</p>
+  </section>
+  
+  <section>
+    <h2>Day 3: Museums and Culture</h2>
+    <p>Experiences from visiting museums and immersing in the local culture.</p>
+  </section>
+</article>
+</td>
+   <td><section>
+  <h2>About Us</h2>
+  <p>Information about our company and its mission.</p>
+</section>
+
+<section>
+  <h2>Services</h2>
+  <p>Details about the services we offer.</p>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Ways to get in touch with us.</p>
+</section>
+</td>
+   <td><article>
+  <h1>Introduction</h1>
+  <p>This is the introductory section of the article.</p>
+  
+  <section>
+    <h2>Background</h2>
+    <p>Here we provide some background information.</p>
+  </section>
+  
+  <section>
+    <h2>Methodology</h2>
+    <p>Details about the methodology used in the study.</p>
+  </section>
+  
+  <section>
+    <h2>Results</h2>
+    <p>Summary of the research findings.</p>
+  </section>
+</article>
+</td>
 <tr>
 <tr>
    <td>33</td>
    <td>&lt;mark&gt;</td>
    <td>Makes text stand out</td>
-   <td>Highlights a special word</td>
-   <td>Marks important information</td>
-   <td>Highlights text</td>
+   <td><p>Search results: <mark>OpenAI</mark> has developed advanced language models.</p></td>
+   <td><p>The <mark>Internet</mark> is a global network of interconnected computers.</p></td>
+   <td><p>Please <mark>note</mark> that the deadline for submission is Friday.</p></td>
 <tr>
 <tr>
    <td>34</td>
-   <td>&lt;progress&gt;</td>
-   <td>Tracks how much is done</td>
-   <td>Indicates the completion of a task</td>
-   <td>Shows how far along something is</td>
-   <td>Represents the progress of a task</td>
+   <td>&lt;article&gt;</td>
+   <td>An individual blog post</td>
+   <td><article>
+  <h1>How to Start a Successful Blog</h1>
+  <p>If you're considering starting a blog, here are some essential tips to help you get started...</p>
+  <p>Content of the blog post...</p>
+  <footer>Published on <time datetime="2024-04-10">April 10, 2024</time> by <cite>John Doe</cite></footer>
+</article>
+</td>
+   <td><article>
+  <h1>Product Review: Smartphone</h1>
+  <p>In-depth review of the features, performance, and user experience of the XYZ Smartphone...</p>
+  <p>Pros and cons of the product...</p>
+  <footer>Published on <time datetime="2024-04-08">April 8, 2024</time> by <cite>ProductReviewExpert</cite></footer>
+</article>
+</td>
+   <td><article>
+  <h1>Benefits of Exercise</h1>
+  <p>A recent study conducted by scientists suggests that regular exercise can have numerous health benefits...</p>
+  <p>Detailed information about the study...</p>
+  <footer>Published on <time datetime="2024-04-09">April 9, 2024</time> by <cite>Jane Smith</cite></footer>
+</article>
+</td>
 <tr>
 <tr>
    <td>35</td>
    <td>&lt;figure&gt;</td>
    <td>Shows a photo with a description</td>
-   <td>Contains a picture or diagram</td>
-   <td>Defines self-contained content</td>
-   <td>Shows an illustration with a label</td>
-<tr>
-<tr>
+   <td><figure>
+    <img src="C:\Users\user\Documents\The Curve\images\sunset.jpg" alt="Description of the image" width="200" height="150">
+    <figcaption>This is a beautiful sunset.</figcaption>
+</figure></td>
+
+   <td><figure>
+    <img src="C:\Users\user\Documents\The Curve\images\photosynthesis.gif" alt="Diagram explaining a concept" width="200" height="150">
+    <figcaption>This diagram illustrates how photosynthesis works.</figcaption>
+</figure>
+</td>
+   <td><figure>
+    <img src="C:\Users\user\Documents\The Curve\images\vincent-van-gogh-original-in-manner-of-v-GFH4P.jpg" alt="Artwork" width="200" height="150">
+    <figcaption>"Starry Night" by Vincent van Gogh.</figcaption>
+</figure>
+</td>
+</tr>
+
    <td>36</td>
    <td>&lt;figcaption&gt;</td>
    <td>Explains a picture briefly</td>
-   <td>Gives a title to an image</td>
-   <td>Defines a caption for a figure element</td>
-   <td>Describes what's in the image</td>
+   <td>
+  <figure>
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/6RO80keOG1k" frameborder="0" allowfullscreen></iframe>
+    <figcaption>This is an example video.</figcaption>
+  </figure>
+<style>
+  .resize-image {
+    width: 100%; 
+    height: 315; 
+    max-width: 500px;
+    display: block; 
+  }
+</style>
+<td><figure>
+  <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+  </svg>
+  <figcaption>This is a red circle.</figcaption>
+</figure>
+</td>
+
+<td>
+  <figure>
+    <img src="C:\Users\user\Documents\The Curve\images\357094363_293075799892743_6470475429163598708_n.jpg" alt="Example Image" class="resize-image">
+    <figcaption>This is my workspace.</figcaption>
+  </figure>
+</td>
+
+
 <tr>
 <tr>
    <td>37</td>
    <td>&lt;optgroup&gt;</td>
    <td>Groups similar options together</td>
-   <td>Arranges options by topic</td>
-   <td>Organizes choices into categories</td>
-   <td>Groups related option elements in a dropdown list</td>
+   <td><select>
+  <optgroup label="Citrus Fruits">
+    <option value="orange">Orange</option>
+    <option value="lemon">Lemon</option>
+    <option value="lime">Lime</option>
+  </optgroup>
+  <optgroup label="Berry Fruits">
+    <option value="strawberry">Strawberry</option>
+    <option value="blueberry">Blueberry</option>
+    <option value="raspberry">Raspberry</option>
+  </optgroup>
+</select></td>
+   <td><select>
+  <optgroup label="Scripting Languages">
+    <option value="javascript">JavaScript</option>
+    <option value="python">Python</option>
+    <option value="ruby">Ruby</option>
+  </optgroup>
+  <optgroup label="Compiled Languages">
+    <option value="java">Java</option>
+    <option value="csharp">C#</option>
+    <option value="cplusplus">C++</option>
+  </optgroup>
+</select>
+</td>
+   <td><select>
+  <optgroup label="Japanese Cars">
+    <option value="toyota">Toyota</option>
+    <option value="honda">Honda</option>
+    <option value="nissan">Nissan</option>
+  </optgroup>
+  <optgroup label="European Cars">
+    <option value="bmw">BMW</option>
+    <option value="mercedes">Mercedes-Benz</option>
+    <option value="audi">Audi</option>
+  </optgroup>
+</select>
+</td>
 <tr>
 <tr>
    <td>38</td>
    <td>&lt;meter&gt;</td>
-   <td>Measures a quantity</td>
-   <td>Displays how much is left</td>
    <td>Shows a level of something</td>
-   <td>Defines a scalar measurement within a known range</td>
+   <td><meter value="60" min="0" max="100">60%</meter></td>
+   <td><meter value="80" min="0" max="100" low="30" high="70" optimum="100">80%</meter></td>
+   <td><meter value="250" min="0" max="500">250 MB used out of 500 MB</meter></td>
 <tr>
 <tr>
    <td>39</td>
    <td>&lt;time&gt;</td>
    <td>Displays a date or time</td>
-   <td>Shows when something happened</td>
-   <td>Indicates a specific moment</td>
-   <td>Represents a specific time or date</td>
+   <td><time datetime="2024-04-10T15:30:00">3:30 PM on April 10, 2024</time></td>
+   <td>I have a date on <time datetime="2024-04-10">April 10, 2024</time></td>
+   <td><time datetime="2024-04-10T08:00:00-05:00">8:00 AM on April 10, 2024 (GMT-5)</time></td>
 <tr>
 <tr>
    <td>40</td>
    <td>&lt;datalist&gt;</td>
-   <td>Gives suggestions while typing</td>
-   <td>Offers choices in a dropdown</td>
-   <td>Specifies a list of pre-defined options for an input element</td>
-   <td>Shows possible answers to choose</td>
+<td>Possible answers to choose>
+<td><label for="browser">Choose your browser from the list:</label>
+<input list="browsers" name="browser" id="browser">
+
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist></td>
+<td><label for="browser">Choose your favorite color from the list:</label>
+<input list="browsers" name="browser" id="browser">
+
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist></td>
+<td><label for="browser">Choose your preferred transportation from the list:</label>
+<input list="browsers" name="browser" id="browser">
+
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist></td>
 <tr>
  
 </table>
-
-	
-
-  
-
 </body>
 </html>
